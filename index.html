@@ -8,8 +8,16 @@
 
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 
     <script src='main.js'></script>
+
+    <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </head>
 <body>
       <!--  #HEADER -->
@@ -43,11 +51,6 @@
         </nav>
 
         <div class="navbar-actions">
-
-          <select name="language" id="lang">
-            <option value="en">English</option>
-            <option value="hi">हिन्दी</option>
-          </select>
   
         </div>
 
@@ -93,16 +96,157 @@
 
     <!--  #Members -->
 
+    
     <section class="section-4">
-      <div class="members">
 
+      <div class="member-heading">
+        <h1 class="section-subtitle">Our Team</h1>
+      </div>
+
+      <div class="members-container">
+      <div class="members">
+          <input type="radio" name="dot" id="one">
+          <input type="radio" name="dot" id="two">
+          <div class="main-card">
+            <div class="cards">
+              <div class="card">
+               <div class="content">
+                 <div class="img">
+                   <img src="images/img1.jpg" alt="">
+                 </div>
+                 <div class="details">
+                   <div class="name">Mrs Divya</div>
+                   <div class="job">Founder & Director</div>
+                 </div>
+               </div>
+              </div>
+              <div class="card">
+               <div class="content">
+                 <div class="img">
+                   <img src="images/img2.jpg" alt="">
+                 </div>
+                 <div class="details">
+                   <div class="name">Dr. E Muthu Kumaran</div>
+                   <div class="job">Director</div>
+                 </div>
+               </div>
+              </div>
+              <div class="card">
+               <div class="content">
+                 <div class="img">
+                   <img src="images/img3.jpg" alt="">
+                 </div>
+                 <div class="details">
+                   <div class="name">K Rahul</div>
+                   <div class="job">Technical Engineer</div>
+                 </div>
+               </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+               <div class="content">
+                 <div class="img">
+                   <img src="images/img4.jpg" alt="">
+                 </div>
+                 <div class="details">
+                   <div class="name">Suprit Biswas</div>
+                   <div class="job">Technical Engineer</div>
+                 </div>
+                 <div class="media-icons">
+                   <a href="#"><i class="fab fa-facebook-f"></i></a>
+                   <a href="#"><i class="fab fa-twitter"></i></a>
+                   <a href="#"><i class="fab fa-instagram"></i></a>
+                   <a href="#"><i class="fab fa-youtube"></i></a>
+                 </div>
+               </div>
+              </div>
+            </div>
+          </div>
+          <div class="button">
+            <label for="one" class=" active one"></label>
+            <label for="two" class="two"></label>
+          </div>
+        </div>
       </div>
     </section>
 
     <!--  #Contact Us -->
 
     <section class="section-5">
-      <div class="contact-us">
+
+      <div class="contact-heading">
+        <h1 class="section-subtitle">Contact Us</h1>
+      </div>
+
+      <div class="contact">
+        
+        
+
+        <form action="" class="contact-form">
+
+          <div class="form-wrapper">
+
+            <label for="name" class="form-label">Name</label>
+
+            <div class="input-wrapper">
+
+              <input type="text" name="name" id="name" required placeholder="e.g John Doe" class="input-field">
+
+              <ion-icon name="person-circle"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="email" class="form-label">Email</label>
+
+            <div class="input-wrapper">
+
+              <input type="email" name="email" id="email" required placeholder="e.g johndoe@mail.com"
+                class="input-field">
+
+              <ion-icon name="mail"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="phone" class="form-label">Phone</label>
+
+            <div class="input-wrapper">
+
+              <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
+
+              <ion-icon name="call"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="message" class="form-label">Message</label>
+
+            <div class="input-wrapper">
+
+              <textarea name="message" id="message" required placeholder="Write message..."
+                class="input-field"></textarea>
+
+              <ion-icon name="chatbubbles"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send</button>
+
+        </form>
+
 
       </div>
     </section>
