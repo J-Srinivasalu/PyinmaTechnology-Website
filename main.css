@@ -22,7 +22,7 @@
 }
 @font-face {
   font-family: CavierDreams;
-  src: url(../Pyinma_Tech/fonts/CaviarDreams_Bold.ttf);
+  src: url(../Pyinma_Tech/fonts/CaviarDreams.ttf);
 }
 
 /* comman styles */
@@ -35,7 +35,6 @@
     text-decoration: none;
     list-style-type: none;
     font-family: CavierDreams, cursive;
-    font-weight: bold;
 }
 
 
